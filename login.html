@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="196x196" href="https://www.greenhouse.io/favicon-196x196.png">
+    <script src="https://kit.fontawesome.com/eccd646b54.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="signinContainer">
+        <div>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmRPHm3f7MsX-1vpC4tslRbxPjZDPk3FE_SJXpgJXOm2tnlg6bIX6dWTCJPfxNYQRFS_rqWeWQI=w1920-h990"
+                alt="">
+        </div>
+        <div id="loginDiv">
+            <img id="grnLogo" src="https://recruiting.cdn.greenhouse.io/assets/sessions/iconGhr-46ff84da0055c0a9c2fb059555057583cbda14599c08baf319475bc337a82543.png" alt="">
+            <h1>Let’s start hiring.</h1>
+            <div id="inputID">
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <button onclick="login()">Login</button> 
+            <button onclick="window.location.href='signup.html'">SignUp</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function login() {
+        let email;
+        email = document.getElementById("email").value;
+
+        let user_records = new Array();
+        user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
+        if (user_records.some((v) => { return v.email == email})) {
+            alert("Logged IN 😊");
+            window.location.href = "index.html"
+        }
+        else {
+            alert('Email Not Registered Please Sign Up ⚠️');
+            window.location.href = "signup.html"
+        }
+
+    }
+</script>

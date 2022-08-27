@@ -1,0 +1,226 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#signinContainer {
+    height: auto;
+    border: 0px solid red;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#signinContainer>div {
+    border: 0px solid blue;
+    width: 50%;
+    height: 99%;
+}
+
+#signinContainer>div:nth-child(1) {
+    background-color: #efefef;
+}
+
+#signinContainer>div>img {
+    width: 135%;
+}
+
+#signinContainer>div:nth-child(2) {
+
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#signinContainer>div>#grnLogo {
+    width: 50%;
+}
+
+#signUpDiv>#grnLogoSignup {
+    width: 2%;
+}
+
+#signinContainer>div>h1 {
+    font-size: 78px;
+}
+
+#signinContainer>div>button {
+    height: 50px;
+    margin: auto;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #3574d6;
+    color: white;
+    font-size: 26px;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#signUpDiv>#signupbtn {
+    height: 50px;
+    margin: auto;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #3574d6;
+    color: white;
+    font-size: 26px;
+    border: none;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#loginDiv>#inputID {
+    border: 0px solid red;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 60px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-around;
+}
+
+#loginDiv>#inputID>input {
+    margin: auto;
+    outline: none;
+    height: 90%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+
+}
+
+
+#signinContainer>#loginDiv {
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 35%;
+    text-align: center;
+    align-items: center;
+    height: 500px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 8px 8px 0px;
+    border-radius: 20px;
+}
+
+#grnLogo {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+h1 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#inputID {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+button:nth-child(1) {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+;
+
+button:nth-child(2) {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+#signUpDiv {
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 9px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 18px 18px 50px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-left: -10px;
+}
+
+#grnLogo {
+    border: 0px solid red;
+    grid-area: 1 / 1 / 2 / 3;
+    margin: auto;
+}
+
+#SignUpH1 {
+    grid-area: 2 / 1 / 3 / 3;
+    border: 0px solid red;
+    margin: auto;
+}
+
+#nameCon {
+    grid-area: 3 / 1 / 4 / 3;
+    border: 0px solid red;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#nameCon>input{
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+#mailCon {
+    grid-area: 4 / 1 / 5 / 3;
+    border: 0px solid red;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mailCon>input{
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+#passCon {
+    grid-area: 5 / 1 / 6 / 3;
+    border: 0px solid red;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+#passCon>input{
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+#passCon>i{
+    margin: auto;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#passCon>i:hover{
+    opacity: 30%;
+}
+
+#signupbtn {
+    grid-area: 6 / 1 / 7 / 3;
+}

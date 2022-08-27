@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="196x196" href="https://www.greenhouse.io/favicon-196x196.png">
+    <script src="https://kit.fontawesome.com/eccd646b54.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="signinContainer">
+        <div>
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmRPHm3f7MsX-1vpC4tslRbxPjZDPk3FE_SJXpgJXOm2tnlg6bIX6dWTCJPfxNYQRFS_rqWeWQI=w1920-h990"
+                alt="">
+        </div>
+        <div>
+            <div id="signUpDiv">
+                <img id="grnLogo"
+                    src="https://recruiting.cdn.greenhouse.io/assets/sessions/iconGhr-46ff84da0055c0a9c2fb059555057583cbda14599c08baf319475bc337a82543.png"
+                    alt="">
+                <h1 id="SignUpH1">Sign Up Now!</h1>
+                <div id="nameCon">
+                    <input id="name" type="text" placeholder="Enter Your Name">
+                </div>
+                <div id="mailCon">
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+                <div id="passCon">
+                    <input id="pass" type="password" placeholder="Password">
+                    <i id="passSeen" class="fa-solid fa-eye-slash"></i>
+                </div>
+                <button id="signupbtn" onclick="signup()">SignUp</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function signup() {
+        let name, email, psw;
+        name = document.getElementById("name").value;
+        email = document.getElementById("email").value;
+        psw = document.getElementById("pass").value;
+
+        let user_records = new Array();
+        user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
+        if (user_records.some((v) => { return v.email == email })) {
+            alert("User Already Exist");
+        }
+        else {
+            user_records.push({
+                "name": name,
+                "email": email,
+                "psw": psw
+            })
+            alert("Signed Up Successfully");
+            window.location.href = "login.html"
+            localStorage.setItem("users", JSON.stringify(user_records));
+        }
+
+    }
+
+    var seen = document.getElementById("passSeen");
+    seen.addEventListener("click", function () {
+        if (seen.className == "fa-solid fa-eye-slash") {
+            seen.className = "fa-solid fa-eye"
+            var pss = document.getElementById("pass")
+            pss.type = "text"
+            // console.log(pss)
+        } else {
+            seen.className = "fa-solid fa-eye-slash"
+            var pss = document.getElementById("pass")
+            pss.type = "password"
+            // console.log(pss)
+        }
+
+    })
+</script>

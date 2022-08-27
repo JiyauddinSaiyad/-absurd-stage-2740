@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    background: #FFFFFF;
+}
+
+#mainmenu {
+    border: 0px solid blue;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+    padding: 5px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+#menu {
+    width: auto;
+    text-align: center;
+    font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    border: 0px solid red;
+}
+
+#logo>img {
+    width: 180px;
+}
+
+#links-btn {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    border: 0px solid red;
+    width: 50%;
+}
+
+#btn-links {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    border: 0px solid red;
+    width: 20%;
+}
+
+#links-btn>div {
+    margin: auto;
+}
+
+#links-btn>div:hover {
+    color: #439c85;
+    cursor: pointer;
+    border-bottom: 1px solid #439c85;
+}
+
+#btn-links>div {
+    margin: auto;
+    margin-left: 10px;
+}
+
+#btn-links>div:nth-child(1) {
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 80px;
+}
+
+#btn-links>div:nth-child(1):hover {
+    border: 1px solid #439c85;
+    color: #439c85;
+}
+
+#btn-links>div:nth-child(2) {
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 160px;
+    background-color: #3574d6;
+    color: white;
+}
+
+#btn-links>div:nth-child(2):hover {
+    background-color: #173a72;
+    color: white;
+}
+
+#menu-content-p {
+    display: none;
+    /* display: flex; */
+    border: 0px solid red;
+    text-align: left;
+    background-color: #15372c;
+    padding: 50px;
+}
+
+#menu-content {
+    background-color: #15372c;
+    height: 350px;
+    flex-wrap: wrap;
+    color: white;
+    margin: auto;
+    padding: 50px;
+    width: 20%;
+    border: 0px solid red;
+}
+
+#menu-content-1 {
+    background-color: #15372c;
+    height: 200px;
+    flex-wrap: wrap;
+    color: white;
+    margin: auto;
+    padding: 50px;
+    width: 60%;
+    border: 0px solid red;
+    justify-content: space-around;
+}
+
+.links-holder>ul {
+    border: 0px solid red;
+    display: grid;
+    row-gap: 20px;
+}
+
+.links-holder>h3 {
+    color: #439c85;
+}
+
+.links-holder>ul>a {
+    color: #FFFFFF;
+    list-style-type: initial;
+    list-style: none;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.links-holder>ul>a:hover {
+    border-bottom: 1px solid #439c85;
+}
+
+#menu-contentP1 {
+    display: flex;
+    border: 10px solid red;
+}
+
+.side-holder {
+    display: flex;
+    border-left: 5px solid #439c85;
+    padding-left: 50px;
+}
+
+#side-img-holder>img {
+    width: 250px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+#side-content-holder>h5 {
+    color: #439c85;
+}
+
+#menu-content-P1 {
+    display: none;
+    /* display: flex; */
+    border: 0px solid red;
+    text-align: left;
+    background-color: #15372c;
+    padding: 50px;
+}
+
+#menu-content-holder {
+    display: flex;
+    border: 0px solid red;
+    margin-top: 50px;
+}
+
+#side-content-holder>button {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 250px;
+}
+
+#side-content-holder>button:hover {
+    border: 1px solid #439c85;
+    color: #439c85;
+
+}
+
+
+#menu-content-P2 {
+    display: none;
+    /* display: flex; */
+    border: 0px solid red;
+    text-align: left;
+    background-color: #15372c;
+    padding: 50px;
+}
+
+
+
+#menu-content-P3 {
+    display: none;
+    /* display: flex; */
+    border: 0px solid red;
+    text-align: left;
+    background-color: #15372c;
+    padding: 50px;
+}
