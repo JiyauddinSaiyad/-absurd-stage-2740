@@ -4,11 +4,40 @@ logo.style.cursor = "pointer"
 logo.addEventListener("click", function () {
     location.href = "\index.html"
 })
+
+
+
+
+
 var btn1 = document.querySelector("#sign-in")
 btn1.style.cursor = "pointer"
 btn1.addEventListener("click", function () {
     location.href = "\login.html"
 })
+var user_records = JSON.parse(localStorage.getItem("users"))
+user_records.forEach(function (el, i) {
+    if (el) {
+        document.getElementById("sign-in").innerText = "Profile"
+        var btn1 = document.querySelector("#sign-in")
+        btn1.style.cursor = "pointer"
+        btn1.addEventListener("click", function () {
+            location.href = "\profile.html"
+        })
+
+    } else {
+        document.getElementById("sign-in").innerText = "Login"
+        var btn1 = document.querySelector("#sign-in")
+        btn1.style.cursor = "pointer"
+        btn1.addEventListener("click", function () {
+            location.href = "\login.html"
+        })
+    }
+});
+
+
+
+
+
 div1.addEventListener("click", function () {
     var res = document.getElementById('menu-content-P1');
     res.style.display = 'none'
@@ -147,6 +176,6 @@ function myFunction(e) {
         dv2.blogBody.hidden = false
         var dv3 = document.getElementsByClassName("diversity-inclusion")
         dv3.blogBody.hidden = false
-    } 
+    }
 
 }
